@@ -50,16 +50,20 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(children: [
           Padding(padding: const EdgeInsets.all(22.0),
             child: TextField(
-              decoration: InputDecoration(labelText: ' G=good A=aliright N=Notbad P=Poor',
-              border: OutlineInputBorder()),
+              decoration: InputDecoration(
+                labelText: ' G=good A=aliright N=Notbad P=Poor',
+                border: OutlineInputBorder()
+              ),
               keyboardType: TextInputType.text,
               onChanged: (text){t1=text;},
             ),
           ),
           Padding(padding: const EdgeInsets.all(22.0),
             child: TextField(
-              decoration: InputDecoration(labelText: ' Enter bill amount: ', 
-              border: OutlineInputBorder()),
+              decoration: InputDecoration(
+                labelText: ' Enter bill amount: ', 
+                border: OutlineInputBorder()
+              ),
               keyboardType: TextInputType.number,
               onChanged: (text){t2=text; n2=double.parse(t2);},
             ),
