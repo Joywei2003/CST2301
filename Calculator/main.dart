@@ -71,15 +71,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(children: [
           Padding(padding: const EdgeInsets.all(8.0),
             child: TextField(
-              decoration: InputDecoration(labelText: ' Enter a number: ',
-              border: OutlineInputBorder()),
+              decoration: InputDecoration(
+                labelText: ' Enter a number: ',
+                border: OutlineInputBorder()
+              ),
               onChanged: (text){print(text);num1=text;}
             ),
           ),
           Padding(padding: const EdgeInsets.all(8.0),
             child: TextField(
-              decoration: InputDecoration(labelText: ' Enter another number: ',
-              border: OutlineInputBorder()),
+              decoration: InputDecoration(
+                labelText: ' Enter another number: ',
+                border: OutlineInputBorder()
+              ),
               onChanged: (text){num2=text;},
             ),
           ),
